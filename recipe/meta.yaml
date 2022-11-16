@@ -34,6 +34,7 @@ test:
     - qpsolvers
   commands:
     - pip check
+    - python -c "import qpsolvers; print(qpsolvers.available_solvers)"
   requires:
     - pip
 
