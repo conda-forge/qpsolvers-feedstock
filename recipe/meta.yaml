@@ -28,6 +28,9 @@ requirements:
     - osqp
     - qpoases
     - proxsuite
+    - numpy
+    - scipy
+    - scs
 
 test:
   imports:
