@@ -22,16 +22,8 @@ requirements:
     - flit-core
   run:
     - python >=3.5
-    - quadprog >=0.1.8
-    - ecos
-    - cvxopt
-    - osqp
-    - qpoases
-    - proxsuite
     - numpy
     - scipy
-    - scs
-    - daqp
 
 test:
   imports:
