@@ -7,21 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/qpsolvers-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/qpsolvers-{{ version }}.tar.gz
   sha256: bd2dc68f1c935d17d64ec35c8f6e9d9283a92bc37a92633956a64387dbb7a2b8
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.5
+    - python {{ python_min }}
     - flit-core
   run:
-    - python >=3.5
+    - python >={{ python_min }}
     - quadprog >=0.1.8
     - ecos
     - cvxopt
@@ -41,6 +41,7 @@ test:
     - python -c "import qpsolvers; print(qpsolvers.available_solvers)"
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/stephane-caron/qpsolvers
