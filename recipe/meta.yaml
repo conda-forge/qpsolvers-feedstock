@@ -11,7 +11,7 @@ source:
   sha256: c3080312a4b4558aad6f9a4f0a92afa1627d4a09653fd83674bc688d6b3aaa06
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -26,7 +26,6 @@ requirements:
     - ecos
     - cvxopt
     - osqp
-    - qpoases
     - proxsuite
     - numpy
     - scipy
