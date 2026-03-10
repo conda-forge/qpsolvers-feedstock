@@ -1,5 +1,5 @@
 {% set name = "qpsolvers" %}
-{% set version = "4.9.0" %}
+{% set version = "4.10.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/qpsolvers-{{ version }}.tar.gz
-  sha256: 1a365fe3bc9f9bf2aa78ae6ab74267beb6c9ddc8c6ff355374f18b275711738d
+  sha256: 1a4c86d502eb67e3f531351c93d027730b86c0f81d9df4a04c71a01617dacd46
 
 build:
   number: 0
